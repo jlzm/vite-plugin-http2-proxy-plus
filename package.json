@@ -1,6 +1,6 @@
 {
   "name": "@vitecraft/vite-plugin-http2-proxy-plus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Vite plugin to proxy HTTP/HTTPS and WebSocket requests with HTTP/2 support.",
   "main": "dist/cjs/index.js",
   "exports": {

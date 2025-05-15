@@ -5,14 +5,14 @@ A Vite plugin that allows you to proxy HTTP, HTTPS, and WebSocket (WS/WSS) reque
 ## Installation
 
 ```bash
-npm install vite-plugin-http2-proxy-plus --save-dev
+npm install @vitecraft/vite-plugin-http2-proxy-plus --save-dev
 ```
 
 Usage
 In your vite.config.ts (or vite.config.js), add the plugin to the plugins array:
 
 ```typescript
-import http2ProxyPlus from 'vite-plugin-http2-proxy-plus';
+import http2ProxyPlus from '@vitecraft/vite-plugin-http2-proxy-plus';
 
 export default {
   plugins: [
