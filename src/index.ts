@@ -56,7 +56,7 @@ export default (options: {
   const configure = ({ middlewares, httpServer }: { middlewares: Connect.Server; httpServer: any }) => {
     const rules = prepareRules();
 
-    // 处理 HTTP/HTTPS 请求
+    // Handle HTTP/HTTPS requestions
     for (const rule of rules) {
       middlewares.use((req, res, next) => {
         if (req.url && rule.re.test(req.url)) {
@@ -89,7 +89,7 @@ export default (options: {
       });
     }
 
-    // 处理 WS/WSS 请求
+    // Handle WS/WSS requestions
     httpServer.on("upgrade", (req: IncomingMessage, socket: Socket, head: Buffer) => {
       const matched = rules.find((rule) => req.url && rule.re.test(req.url!));
       if (!matched) return;
