@@ -1,0 +1,48 @@
+{
+  "name": "vite-plugin-http2-proxy-plus",
+  "version": "1.0.0",
+  "description": "A Vite plugin to proxy HTTP/HTTPS and WebSocket requests with HTTP/2 support.",
+  "main": "dist/cjs/index.js",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:esm": "tsc --module ESNext --outDir dist/esm",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
+    "build": "pnpm run build:esm && pnpm run build:cjs"
+  },
+  "keywords": [
+    "vite",
+    "plugin",
+    "http2",
+    "proxy",
+    "ws",
+    "wss"
+  ],
+  "author": "hoyt",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jlzm/vite-plugin-http2-proxy-plus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jlzm/vite-plugin-http2-proxy-plus/issues"
+  },
+  "homepage": "https://github.com/jlzm/vite-plugin-http2-proxy-plus",
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "@types/ws": "^8.18.1",
+    "prettier": "^3.5.3",
+    "tsc-watch": "^6.2.1",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "http2-proxy": "^5.0.53",
+    "ws": "^8.18.2"
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "ES2018",
+      "module": "ESNext",         // 默认可以为 ESM，也无所谓
+      "declaration": true,
+      "declarationDir": "./types",
+      "outDir": "./dist",
+      "strict": true,
+      "esModuleInterop": true,
+      "moduleResolution": "node",
+      "skipLibCheck": true
+    },
+    "include": ["src"]
+  }
+  
